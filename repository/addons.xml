@@ -1,46 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-  <addon id="plugin.video.uaiptv"
-         name="UA IPTV"
-         version="1.1.0"
-         provider-name="Alex-Doss">
-    <requires>
-      <import addon="xbmc.python" version="2.25.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-      <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.repository" name="Alex Doss IPTV Repository">
-      <info compressed="false">https://raw.githubusercontent.com/Alex-Doss/iptv/main/repository/addons.xml</info>
-      <checksum>https://raw.githubusercontent.com/Alex-Doss/iptv/main/repository/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.githubusercontent.com/Alex-Doss/iptv/main/repository/zips</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-      <summary>Лёгкий IPTV-плагин для Kodi 17.x / Android 7.</summary>
-      <description>Плагин с простым списком каналов и автообновлением через GitHub-репозиторий.</description>
-      <platform>all</platform>
-      <language>ru</language>
-      <license>MIT</license>
-      <source>https://github.com/Alex-Doss/iptv</source>
-    </extension>
-  </addon>
-
-  <addon id="repository.alexdoss.iptv"
-         name="Alex Doss IPTV Repository"
-         version="1.0.0"
-         provider-name="Alex-Doss">
-    <extension point="xbmc.addon.repository" name="Alex Doss IPTV Repository">
-      <info compressed="false">https://raw.githubusercontent.com/Alex-Doss/iptv/main/repository/addons.xml</info>
-      <checksum>https://raw.githubusercontent.com/Alex-Doss/iptv/main/repository/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.githubusercontent.com/Alex-Doss/iptv/main/repository/zips</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-      <summary>Репозиторий Kodi-аддонов Alex Doss IPTV.</summary>
-      <description>Репозиторий для автоматических обновлений UA IPTV через GitHub.</description>
-      <platform>all</platform>
-      <language>ru</language>
-      <license>MIT</license>
-      <source>https://github.com/Alex-Doss/iptv</source>
-    </extension>
-  </addon>
+    <addon id="plugin.video.uaiptv" name="Для Бати" version="1.1.2" provider-name="Alex-Doss">
+        <requires>
+            <import addon="xbmc.python" version="2.25.0"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="default.py">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Простой IPTV-плагин для Kodi 17.x / Android 7</summary>
+            <description>Лёгкий IPTV-плагин для старых TV box с избранным, сайтами и журналом.</description>
+            <platform>all</platform>
+            <language>ru</language>
+            <license>MIT</license>
+            <source>https://github.com/Alex-Doss/iptv</source>
+        </extension>
+    </addon>
+    <addon id="repository.alexdoss.iptv" name="Alex Doss IPTV Repository" version="1.0.1" provider-name="Alex-Doss">
+        <extension point="xbmc.addon.repository" name="Alex Doss IPTV Repository">
+            <info compressed="false">https://raw.githubusercontent.com/Alex-Doss/iptv/main/repository/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Alex-Doss/iptv/main/repository/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Alex-Doss/iptv/main/repository/zips</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Репозиторий для обновлений Для Бати</summary>
+            <description>Репозиторий Kodi-аддонов Alex Doss IPTV.</description>
+            <platform>all</platform>
+            <language>ru</language>
+            <license>MIT</license>
+            <source>https://github.com/Alex-Doss/iptv</source>
+        </extension>
+    </addon>
 </addons>
